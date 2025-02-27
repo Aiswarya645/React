@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 300px;
+    height:300px;
+    background-color: rgb(174, 174, 68);
+    text-align: center;
+    padding: 30px;
+}
+.card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: rgb(237, 129, 129);
+    padding: 20px;
+}

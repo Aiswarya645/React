@@ -1,0 +1,39 @@
+.main {
+    
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    width: 100vw;  
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 2, 2); 
+    text-align: center;
+    padding: 20px;
+    
+}
+button {
+    padding: 10px 20px;
+    background-color: #0088ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);  /* Shadow effect for text */
+}
+p {
+    font-size: 18px;
+    margin: 5px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.city {
+    font-weight: bold;
+    font-size: 24px;
+}
