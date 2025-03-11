@@ -21,13 +21,26 @@ import Form from './Form/Form';
 import Movie from './datafetching/Movie';
 import Has from './datafetching/Has';
 import Details from './datafetching/Details';
+import Calculator from './Calculator/Calculator';
+import Todo from './Form/Todo/Todo';
+import store from './Redux/store';
+import {Provider} from 'react-redux'
+import Cart from './Redux/Cart';
+import Item from './Redux/Item';
+import Bg from './context/Bg';
+import Themeprovider from './context/Themeprovider';
+import Lang from './Language/Lang';
+import Langprovider from './Language/Langprovider';
+// import { Provider } from 'react-redux';
+// import store from './Form/Todo/Redux/store';
+// import { Count } from './Form/Todo/Redux/counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
+   <Langprovider><BrowserRouter>
    <Routes>
-    <Route path='/' element={<Count></Count>}></Route>
+    
     <Route path='/user' element={<Users></Users>}></Route>
     <Route path='/map' element={<Map></Map>}></Route>
     <Route path='/fetch'element={<Fetch></Fetch>}></Route>
@@ -36,9 +49,17 @@ root.render(
     <Route path='/movie'element={<Movie></Movie>}></Route>
     <Route path='/has'element={<Has></Has>}></Route>
     <Route path='/movies/:id'element={<Details></Details>}></Route>
+    <Route path='/Cal'element={<Calculator></Calculator>}></Route>
+    <Route path='/todo'element={<Todo></Todo>}></Route>
+    <Route path='/' element={<Count></Count>}></Route>
+    <Route path='/cart' element={<Cart></Cart>}></Route>
+    <Route path='/item' element={<Item></Item>}></Route>
+    <Route path='/bg' element={<Bg></Bg>}></Route>
+    <Route path='/Lang' element={<Lang></Lang>}></Route>
+  
 
    </Routes>
-   </BrowserRouter>
+   </BrowserRouter></Langprovider>
   </React.StrictMode>
 );
 
